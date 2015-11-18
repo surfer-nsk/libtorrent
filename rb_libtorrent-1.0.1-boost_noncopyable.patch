@@ -1,0 +1,11 @@
+--- libtorrent-rasterbar-1.0.1/include/libtorrent/disk_buffer_pool.hpp	2014-07-03 05:53:49.000000000 +0100
++++ libtorrent-rasterbar-1.0.1/include/libtorrent/disk_buffer_pool.hpp	2014-08-18 17:43:37.380809092 +0100
+@@ -40,6 +40,8 @@ POSSIBILITY OF SUCH DAMAGE.
+ #include "libtorrent/session_settings.hpp"
+ #include "libtorrent/allocator.hpp"
+ 
++#include <boost/noncopyable.hpp>
++
+ #ifndef TORRENT_DISABLE_POOL_ALLOCATOR
+ #include <boost/pool/pool.hpp>
+ #endif
